@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demsew Photo | Portfolio</title>
+  <link rel="stylesheet" href="new.css">
+</head>
+<style>
+  /* === Basic Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Global Styles === */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* === Header (Hero Section) === */
+header.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  color: #ffcc00;
+}
+
+.hero-text p {
+  margin: 10px 0 20px;
+  font-size: 1.2rem;
+}
+
+.hero-text .btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero-text .btn:hover {
+  background: #fff;
+}
+
+.hero-image img {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+}
+
+/* === About Section === */
+.about {
+  padding: 50px 10%;
+  text-align: center;
+}
+
+.about h3 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* === Social Links === */
+.social-links {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #ffcc00;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* === Portfolio Gallery === */
+.portfolio {
+  padding: 40px 5%;
+  text-align: center;
+}
+
+.portfolio h2 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.gallery img,
+.gallery video {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.gallery img:hover,
+.gallery video:hover {
+  transform: scale(1.05);
+}
+
+/* === Contact Section === */
+.contact {
+  text-align: center;
+  padding: 40px 10%;
+}
+
+.contact h2 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+/* === Footer === */
+footer {
+  background: #111;
+  text-align: center;
+  padding: 15px;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+/* === Responsive Design (Mobile Friendly) === */
+@media (max-width: 768px) {
+  header.hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+}
+
+</style>
+<body>
+
+  <header class="hero">
+    <div class="hero-text">
+      <h2>Demsew Photo</h2>
+      <p>Freelance Photographer & Cinematographer</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+    <div class="hero-image">
+      <img src="linkdin.png" alt="Camera Man">
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h3>About Me</h3>
+    <p>
+      Hi! I'm a creative Graphic Designer, Video Editor, Photographer, and Digital Marketer with over 3 years of experience.
+      I love making all kinds of visual content — TikTok videos, music clips, church videos, posters, and landscape photos.
+      <br><br>
+      I work with Adobe Photoshop, Illustrator, Premiere Pro, After Effects, InDesign, and DaVinci Resolve. I focus on
+      creating visuals that tell a story and inspire emotion.
+    </p>
+  </section>
+
+  <div class="social-links">
+    <a href="https://www.facebook.com/demisewzenebe.demisew" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.tiktok.com/@demisew14" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=36vo3u5" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/demisew-zenebe-5b3ba32a0" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://t.me/dz10q" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+  </div>
+
+  <section id="portfolio" class="portfolio">
+    <h2>My Works</h2>
+    <div class="gallery">
+      <img src="demsew.png" alt="Work 1">
+      <a href="https://youtu.be/JhIZqWyB2JE?si=1oKjqxfcuYIyILjC" target="_blank">
+        <img src="demsew2.png" alt="Work 2">
+      </a>
+      <img src="demsew3.png" alt="Work 3">
+      <img src="demsew4.png" alt="Work 4">
+      <img src="demsew5.png" alt="Work 5">
+      <img src="demsew6.png" alt="Work 6">
+      <video controls>
+        <source src="0927(3).mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <div class="document-cta">
+    <a href="camera documents.pdf" class="btn" target="_blank">View My Full Shot List & CV</a>
+  </div>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: demsewzenebe@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Demsew Lens. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
